@@ -13,7 +13,7 @@ pip install -r requirements.txt
 python app/fernet_demo.py
 ```
 **Quel est le rôle de la clé Fernet ?**  
-La clé Fernet est une clé symétrique secrète de 256 bits encodée en Base64, utilisée pour chiffrer et authentifier les données avec AES et HMAC issue de la bibliothèque python cryptography. Un token Fernet contient :  
+La clé Fernet est une clé symétrique secrète de 256 bits encodée en Base64, utilisée pour chiffrer et authentifier les données avec AES et HMAC issue de la bibliothèque python cryptography. Un token Fernet (c'est à dire le résultat chiffré) contient :  
 ```
 | Version | Timestamp | IV | Ciphertext | HMAC |
 ```
@@ -46,7 +46,9 @@ Déposez votre répose ici dans ce Readme. Illustrez vos propos avec des lignes 
 Déposez votre répose ici dans ce Readme  
 
 ## 6) Atelier 1 :
-Dans cet atelier, la clé Fernet n'est plus générée dans le code mais stockée dans un Repository Secret Github. Ecrivez un nouveau programme **python app/fernet_atelier1.py** qui utilisera votre clé Fernet (caché dans un secret) pour encoder et décoder vos fichiers.  
+Dans cet atelier, la clé Fernet n'est plus générée dans le code mais stockée dans un Repository Secret Github. Ecrivez un nouveau programme **python app/fernet_atelier1.py** qui utilisera une clé Fernet caché dans un Secret GitHub pour encoder et décoder vos fichiers.
+
+
 
 
 
